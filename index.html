@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap5" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Palacio Propiedades</title>
+  </head>
+  <body>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <nav class="site-nav">
+      <div class="container">
+        <div class="menu-bg-wrap">
+          <div class="site-navigation">
+            <a href="index.html" class="logo m-0 float-start"
+              >Palacio Propiedades</a>
+
+            <ul
+              class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
+            >
+              <li class="active"><a href="index.html">Inicio</a></li>
+              <li class="has-children">
+                <a href="properties.html">Propiedades</a>
+                <ul class="dropdown">
+                  <li><a href="comprar propiedad.html">Comprar Propiedad</a></li>
+                  <li><a href="quiero alquilar.html">Alquilar Propiedad</a></li>
+                  <li><a href="#">Publicar Propiedad</a></li>
+                  <li class="has-children">
+                    <a href="#">Quiero</a>
+                    <ul class="dropdown">
+                      <li><a href="visitar una propiedad.html">Visitar una Propiedad</a></li>
+                      <li><a href="#">Tasar una Propiedad</a></li>
+                      <li><a href="presentar una oferta.html">Presentar una Oferta/ Reserva</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <a href="properties.html">Te Asesoramos</a>
+                <ul class="dropdown">
+                  <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                  <li><a href="#">Noticias del Mercado</a></li>
+                  <li><a href="#">Donde Invertir</a></li>
+                  <li class="has-children">
+                    <a href="#">Quiero</a>
+                    <ul class="dropdown">
+                      <li><a href="#">Agendar una cita</a></li>
+                      <li><a href="#">Registrarme en la pagina</a></li>
+                      <li><a href="#">Suscribirme</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="services.html">Servicios</a></li>
+              <li><a href="about.html">Nosotros</a></li>
+              <li><a href="contact.html">Contacto</a></li>
+            </ul>
+
+            <a
+              href="#"
+              class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+              data-toggle="collapse"
+              data-target="#main-navbar"
+            >
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-slide">
+        <div
+          class="img overlay"
+          style="background-image: url('images/hero_bg_3.jpg')"
+        ></div>
+        <div
+          class="img overlay"
+          style="background-image: url('images/hero_bg_2.jpg')"
+        ></div>
+        <div
+          class="img overlay"
+          style="background-image: url('images/hero_bg_1.jpg')"
+        ></div>
+      </div>
+
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+           <div class="col-lg-9 text-center">
+            <img src="images/Palacio Propiedades - Logotipo Final (1).jpg" width="100%" "logotipo final" data-aos="fade-up">
+           
+               <form id="buscador">
+               
+                <div class="row1">
+                    
+                        <div class="campos">
+                            <label for="tipo">Tipo Propiedad</label>
+                            <select class="u-full-width" id="tipo">
+                                <option value="">Seleccione</option>
+                                <option value="Casa">Casa</option>
+                                <option value="Departamento">Departamento</option>
+                                <option value="Monoambiente">Monoambiente</option>
+                                <option value="Casa Quinta/Quincho">Casa Quinta/Quincho</option>
+                                <option value="Local/Oficina">Local/Oficina</option>
+                                <option value="Lote/Terreno">Lote/Terreno</option>
+                                <option value="Campo/Hectareas">Campo/Hectareas</option>
+                                <option value="Galpon/Deposito">Galpon/Deposito</option>
+                                <option value="Cochera/Garaje">Cochera/Garaje</option>
+                                <option value="Todas las Opciones">Todas las Opciones</option>
+                            </select>
+                        </div>
+                        <div class="campos">
+                            <label for="moneda">Tipo Operacion</label>
+                            <select class="u-full-width" id="moneda">
+                                <option value="">Seleccione</option>
+                                <option value="Venta">Comprar</option>
+                                <option value="Alquiler">Alquilar</option>
+                            </select>
+                        </div>
+                        
+                        <div class="campos">
+                            <label for="maximo">Presupuesto Maximo</label>
+                            <select class="u-full-width" id="maximo">
+                                <option value="">Seleccione</option>
+                                <option value="10000000">50,000,000</option>
+                                <option value="100000000">100,000,000</option>
+                                <option value="300000000">150,000,000</option>
+                                <option value="400000000">200,000,000</option>
+                                <option value="600000000">250,000,000</option>
+                                <option value="700000000">300,000,000</option>
+                                <option value="Sin especificar">Ninguno</option>
+                        </select>
+                        </div>
+
+                </div>
+                <div class="row2">
+                    <div class="campos">
+                        <label for="ambientes">Zona Deseada </label>
+                        <select class="u-full-width" id="ambientes">
+                                <option value="">Seleccione</option>
+                                <option value="1">Todas</option>
+                                <option value="2">Coronel Suarez </option>
+                                <option value="3">Colonia 1 Santa Trinidad</option>
+                                <option value="4">Colonia 2 San Jose</option>
+                                <option value="5">Colonia 3 Santa Maria</option>
+                                <option value="6">Alrededores</option>
+                        </select>
+                    </div>
+
+                    
+                </div>
+
+            </form>
+
+                <button type="submit" class="btn btn-primary">Buscar</button>
+              </div>
+           </div>
+         </div>
+       </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="font-weight-bold text-primary heading">
+              Propiedades mas Populares
+            </h2>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <p>
+              <a
+                href="properties.html"
+                target="_blank"
+                class="btn btn-primary text-white py-3 px-4"
+                >VER TODAS LAS PROPIEDADES</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="property-slider-wrap">
+              <div class="property-slider">
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50"
+                        >Av. San Martin 1500</span
+                      >
+                      <span class="city d-block mb-3">Coronel Suarez</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">2 Dormitorios</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">2 baños</span>
+                        </span>
+                      </div>
+
+                      <a
+                        href="property-single.html"
+                        class="btn btn-primary py-2 px-3"
+                        >Ver Ficha Completa</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50"
+                        >Av. Alemanes del Volga 2500</span
+                      >
+                      <span class="city d-block mb-3">Colonia San Jose</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">2 Dormitorios</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">2 baños</span>
+                        </span>
+                      </div>
+
+                      <a
+                        href="property-single.html"
+                        class="btn btn-primary py-2 px-3"
+                        >Ver Ficha completa</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50"
+                        >Av. 11 de Mayo 800</span
+                      >
+                      <span class="city d-block mb-3">Colonia Santa Maria</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">2 Dormitorios</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">2 baños</span>
+                        </span>
+                      </div>
+
+                      <a
+                        href="property-single.html"
+                        class="btn btn-primary py-2 px-3"
+                        >Ver Ficha completa</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50"
+                        >Av. Casey 2300</span
+                      >
+                      <span class="city d-block mb-3">Coronel Suarez</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">2 dormitorios</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">2 baños</span>
+                        </span>
+                      </div>
+
+                      <a
+                        href="property-single.html"
+                        class="btn btn-primary py-2 px-3"
+                        >Ver Ficha Completa</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_5.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50"
+                        >Los Pozos 1700</span
+                      >
+                      <span class="city d-block mb-3">Villa La Arcadia</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">2 Dormitorios</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">2 baños</span>
+                        </span>
+                      </div>
+
+                      <a
+                        href="property-single.html"
+                        class="btn btn-primary py-2 px-3"
+                        >Ver Ficha Completa</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_6.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50"
+                        >Av. Corrientes 3500</span
+                      >
+                      <span class="city d-block mb-3">Mar del Plata</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">2 Dormitorios</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">2 baños</span>
+                        </span>
+                      </div>
+
+                      <a
+                        href="property-single.html"
+                        class="btn btn-primary py-2 px-3"
+                        >Ver Ficha Completa</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50"
+                        >Alem 2232 </span
+                      >
+                      <span class="city d-block mb-3">Bahia Blanca</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">2 dormitorios</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">2 baños</span>
+                        </span>
+                      </div>
+
+                      <a
+                        href="property-single.html"
+                        class="btn btn-primary py-2 px-3"
+                        >Ver Ficha Completa</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50"
+                        >Av. Libertad 2300</span
+                      >
+                      <span class="city d-block mb-3">Colonia Santa Trinidad</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">2 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">2 baths</span>
+                        </span>
+                      </div>
+
+                      <a
+                        href="property-single.html"
+                        class="btn btn-primary py-2 px-3"
+                        >Ver Ficha Completa</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50"
+                        >Av. Alsina 600</span
+                      >
+                      <span class="city d-block mb-3">Coronel Suarez</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">2 Dormitorios</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">2 baños</span>
+                        </span>
+                      </div>
+
+                      <a
+                        href="property-single.html"
+                        class="btn btn-primary py-2 px-3"
+                        >Ver Ficha Completa</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+              </div>
+
+              <div
+                id="property-nav"
+                class="controls"
+                tabindex="0"
+                aria-label="Carousel Navigation"
+              >
+                <span
+                  class="prev"
+                  data-controls="prev"
+                  aria-controls="property"
+                  tabindex="-1"
+                  >Anterior</span
+                >
+                <span
+                  class="next"
+                  data-controls="next"
+                  aria-controls="property"
+                  tabindex="-1"
+                  >Siguiente</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="features-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="box-feature">
+              <span class="flaticon-house"></span>
+              <h3 class="mb-3">Quiero Publicar una Propiedad</h3>
+              <p>
+                Anuncie su propiedad en esta pagina para que sea vista por una amplia red de clientes.
+              </p>
+              <p><a href="#" class="learn-more">Ver más</a></p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+            <div class="box-feature">
+              <span class="flaticon-house-1"></span>
+              <h3 class="mb-3">Quiero Comprar una Propiedad</h3>
+              <p>
+                Vea el catalogo de todas las propiedades en las que puede invertir.
+              </p>
+              <p><a href="properties.html" class="learn-more">Ver Más</a></p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+            <div class="box-feature">
+              <span class="flaticon-building"></span>
+              <h3 class="mb-3">Quiero Alquilar una Propiedad</h3>
+              <p>
+                Vea el catalogo de Alquileres disponibles.
+              </p>
+              <p><a href="properties.html" class="learn-more">Ver más.</a></p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="box-feature">
+              <span class="flaticon-house-3"></span>
+              <h3 class="mb-3">Quiero Tasar una Propiedad</h3>
+              <p>
+                Consulte sobre el valor que tiene que tener su propiedad en el Mercado. 
+              </p>
+              <p><a href="#" class="learn-more">Ver más.</a></p>
+            </div>
+    
+        </div>
+      </div>
+    </section>
+
+
+    <div class="section sec-testimonials">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+             <div class="col-md-6">
+               <h2 class="font-weight-bold heading text-primary mb-4 mb-md-0">
+                Profesionales que nos recomiendan
+               </h2>
+               </div>
+               <div class="col-lg-6 text-lg-end">
+                <p>
+                  <a
+                    href="properties.html"
+                    target="_blank"
+                    class="btn btn-primary text-white py-3 px-4"
+                    >VER TODOS LOS PROFESIONALES</a
+                  >
+                </p>
+               <div class="col-md-6 text-md-end">
+                 <div id="testimonial-nav">
+                   <span class="prev" data-controls="prev">Anterior</span>
+                   <span class="next" data-controls="next">Siguiente</span>
+                  </div>
+               </div>
+               </div>
+
+              
+             <div class="testimonial-slider-wrap">
+             <div class="testimonial-slider">
+             <div class="item">
+              <div class="testimonial">
+                <img
+                  src="images/person_8.jpg"
+                  alt="Image"
+                  class="img-fluid rounded-circle w-25 mb-4"
+                />
+               
+                <h3 class="mb-0"><a href="#">Guido Wagner</a></h3>
+                <span class="meta d-block mb-3">Licenciado en Ingenieria de Sistemas</span>
+                <blockquote>
+                  <p>
+                    Senior Software Engineer at SparkDigital. Apasionado por las nuevas tecnologías. Creacion, desarrollo y mejoras en sistemas y aplicaciones web a gran escala.
+                  </p>
+                </blockquote>
+                
+              </div>
+              <ul class="social list-unstyled list-inline dark-hover">
+              
+                <li class="list-inline-item">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/guiw5/"><span class="icon-linkedin"></span></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+              </ul>
+            </div>
+           
+             
+        
+        
+            <div class="testimonial-slider">
+            <div class="item">
+              <div class="testimonial">
+                <img
+                  src="images/person_7.jpg"
+                  alt="Image"
+                  class="img-fluid rounded-circle w-25 mb-4"
+                />
+                
+                <h3 class="mb-0"><a href="#">Marilin Ermandraut</a></h3>
+                <span class="meta d-block mb-3">Contadora Publica Nacional</span>
+                <blockquote>
+                  <p>
+                    Asesoramiento contable impositivo y laboral. Monotributo. Responsabale Inscripto. Facturacion Electronica. Gestiones Varias.
+                  </p>
+                </blockquote>
+                <ul class="social list-unstyled list-inline dark-hover">
+                  
+                  <li class="list-inline-item">
+                    <a href="#"><span class="icon-facebook"></span></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/marilin-ermandraut-054b4695/"><span class="icon-linkedin"></span></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><span class="icon-instagram"></span></a>
+                  </li>
+                </ul>
+              </div>
+              </div>
+            </div>
+            <div class="testimonial-slider">
+            <div class="item">
+              <div class="testimonial">
+                <img
+                  src="images/person_9.jpg"
+                  alt="Image"
+                  class="img-fluid rounded-circle w-25 mb-4"
+                />
+                
+                <h3 class="mb-0"><a href="#">Iñaki Aguirre</a></h3>
+                <span class="meta d-block mb-3">Licenciado en Sistemas y Gestion</span>
+                <p><blockquote>
+                  Responsable de Desarrollo de Sistemas y Tecnologia. BACS Banco de Credito y Securitización SA.
+                </p></blockquote>
+                <ul class="social list-unstyled list-inline dark-hover">
+                  <li class="list-inline-item">
+                    <a href="#"><span class="icon-facebook"></span></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/i%C3%B1aki-aguirre-7607a727/"><span class="icon-linkedin"></span></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><span class="icon-instagram"></span></a>
+                  </li>
+                </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+
+
+
+
+
+    <div class="section section-4 bg-light">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-5">
+           
+          </div>
+       
+
+    <div class="section">
+      <div class="row justify-content-center footer-cta" data-aos="fade-up">
+        <div class="col-lg-7 mx-auto text-center">
+          <h2 class="mb-4">Forma parte de nuestra potencial cartera de clientes</h2>
+          <p>
+            <a
+              href="suscribirse.html"
+              target="_blank"
+              class="btn btn-primary text-white py-3 px-4"
+              >Registrarme Gratis y Recibir informacion relevante</a
+            >
+          </p>
+        </div>
+        <!-- /.col-lg-7 -->
+      </div>
+      <!-- /.row -->
+    </div>
+
+    
+    </div>
+
+    <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Contacto</h3>
+              <address>Oficina Virtual Coronel Suarez<br />
+                Codigo Postal 7540</address>
+              <ul class="list-unstyled links">
+                <li><a href="tel://11234567890">+54(2926)-453845</a></li>
+                
+                <li>
+                  <a href="mailto:info@mydomain.com">palaciopropiedades@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Fuentes</h3>
+              <ul class="list-unstyled float-start links">
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="#">Profesionales Recomendados</a></li>
+                <li><a href="#">Mercado Actual</a></li>
+                <li><a href="suscribirse.html">Registrarse y Recibir Informacion</a></li>
+  
+              </ul>
+              <ul class="list-unstyled float-start links">
+                <li><a href="#">Tiene alguna Sugerencia?</a></li>
+                <li><a href="#">Buscamos por vos.</a></li>
+                <li><a href="#">Blog Inmobiliario</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+    
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Quizas te interesa</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">Camara Inmobiliaria Argentina</a></li>
+                <li><a href="#">Padron de Martilleros de Bahia Blanca</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+
+              <ul class="list-unstyled social">
+                <li>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-linkedin"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-pinterest"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-dribbble"></span></a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+           
+
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Todos los derechos reservados. Diseñado por
+              <a href="https://untree.co">Francisco Palacio</a>
+            
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.site-footer -->
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
